@@ -1,0 +1,42 @@
+.footer {
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  padding: 1rem;
+  background: #009432;
+  margin: auto;
+}
+.fa {
+  padding: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+.fa:visited {
+  text-decoration: none;
+  color: #000;
+}
+.fa:hover {
+  text-decoration: none;
+  color: #000;
+  background: #26de81;
+}
+.fa:focus {
+  text-decoration: none;
+  color: #000;
+}
+.fa:hover,
+.fa:active {
+  text-decoration: none;
+  color: #000;
+}
+a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 550px) {
+  .footer {
+    font-size: 1.1rem;
+  }
+}

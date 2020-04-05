@@ -1,0 +1,62 @@
+nav {
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "nav-name-area nav-name-area empty-1 empty-2 empty-3 nav-subscribe-area nav-about-area";
+  height: 7vh;
+  align-items: center;
+  background: #009432;
+  margin-bottom: 3rem;
+}
+.nav-name-area {
+  grid-area: nav-name-area;
+}
+.nav-subscribe-area {
+  grid-area: nav-subscribe-area;
+  text-align: center;
+  align-items: center;
+  color: black;
+}
+.nav-subscribe-area:hover {
+  height: 100%;
+  cursor: pointer;
+  padding: 0.5rem;
+  background: #26de81;
+}
+.nav-about-area {
+  grid-area: nav-about-area;
+  text-align: center;
+  padding: 0.5rem;
+}
+.nav-about-area:hover {
+  background: #26de81;
+  height: 100%;
+  cursor: pointer;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+  nav {
+    grid-template-columns: 2fr 1fr 2fr 2fr 0.5fr 0.5fr 0.5fr;
+  }
+  .nav-subscribe-area {
+    grid-area: empty-3;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .nav-about-area {
+    grid-area: nav-about-area;
+  }
+  nav {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 383px) {
+  nav {
+    grid-template-columns: 3fr 2fr 0.5fr 0.5fr 0.5fr;
+  }
+}

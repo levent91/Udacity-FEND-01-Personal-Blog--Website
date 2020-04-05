@@ -1,0 +1,182 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "area-221 area-221 area-211 area-211" "area-221 area-221 area-212 area-212" "area-111 area-112 area-213 area-213";
+  width: 100%;
+  gap: 4rem;
+  color: #ecf0f1;
+}
+.area-221 {
+  grid-area: area-221;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("../images/img222.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 25rem;
+  border-radius: 2px;
+}
+.area-211 {
+  grid-area: area-211;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("../images/img211.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 15rem;
+  border-radius: 2px;
+}
+.area-212 {
+  grid-area: area-212;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("../images/img212.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 15rem;
+  border-radius: 2px;
+}
+.area-111 {
+  grid-area: area-111;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("../images/img111.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 15rem;
+  border-radius: 2px;
+}
+.area-112 {
+  grid-area: area-112;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("../images/img112.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 15rem;
+  border-radius: 2px;
+}
+.area-213 {
+  grid-area: area-213;
+  margin-bottom: 3rem;
+  border-radius: 2px;
+  padding: 2rem;
+  color: #009432;
+  background: rgb(189, 195, 199, 0.2);
+}
+.area-213 h2 {
+  text-align: center;
+}
+.area-213 p q {
+  margin: 1rem 0 0 1rem;
+}
+.area-213 a {
+  color: #009432;
+  text-decoration: none;
+}
+.area-221-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 20rem;
+  max-width: 70rem;
+  min-height: 20rem;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 2px;
+}
+.area-211-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 20rem;
+  max-width: 70rem;
+  min-height: 12.5rem;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 2px;
+}
+.area-211-shadow:hover {
+  color: #26de81;
+  cursor: pointer;
+}
+.area-212-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 20rem;
+  max-width: 70rem;
+  min-height: 12.5rem;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 2px;
+}
+.area-111-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 10rem;
+  max-width: 31rem;
+  min-height: 8rem;
+  padding: 1rem 2rem;
+  margin: auto;
+  text-align: center;
+  border-radius: 2px;
+  margin-top: 1.5rem;
+}
+.area-111-shadow:hover {
+  color: #26de81;
+  cursor: pointer;
+}
+.area-112-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 10rem;
+  max-width: 31rem;
+  min-height: 8rem;
+  padding: 1rem 2rem;
+  margin: auto;
+  text-align: center;
+  border-radius: 2px;
+  margin-top: 1.5rem;
+}
+.area-112-shadow:hover {
+  color: #26de81;
+  cursor: pointer;
+}
+.card-button {
+  margin-top: 0.6rem;
+  padding: 1.5rem;
+  background-color: #009432;
+  border: 1px solid #006266;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  color: #ecf0f1;
+}
+.btn-221 {
+  display: block;
+  margin: 2rem auto;
+}
+.card-button:hover {
+  background-color: #26de81;
+}
+@media only screen and (max-width: 750px) {
+  .grid-container {
+    grid-template-columns: 0.1fr 1.9fr 1.9fr 0.1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+    grid-template-areas: ". area-221 area-221 ." ". area-211 area-211 ." ". area-212 area-212 ." ". area-111 area-112 ." ". area-213 area-213 .";
+  }
+  .area-112 {
+    margin-bottom: 0;
+  }
+  .area-111 {
+    margin-bottom: 0;
+  }
+  .area-211 {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .grid-container {
+    grid-template-areas: "area-221 area-221 area-221 area-221" "area-211 area-211 area-211 area-211" "area-212 area-212 area-212 area-212" "area-111 area-111 area-112 area-112" "area-213 area-213 area-213 area-213";
+  }
+}

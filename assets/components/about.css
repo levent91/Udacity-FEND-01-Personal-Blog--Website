@@ -1,0 +1,54 @@
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-pic-1 {
+  margin: 1rem 5rem 1rem 1rem;
+  width: 25rem;
+  height: 25rem;
+  order: 1;
+  padding: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url("../images/sample_avatar.jpeg");
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-text-field {
+  margin: 1rem 1rem 3rem 1rem;
+  width: 102rem;
+  height: 30rem;
+  order: 3;
+  padding: 1rem;
+}
+.about-bio-field {
+  margin: 1rem;
+  width: 50rem;
+  height: 25rem;
+  order: 2;
+  padding: 1rem;
+  background: rgb(189, 195, 199, 0.2);
+  border-radius: 2px;
+}
+.about-text-center {
+  text-align: center;
+}
+.about-text-left {
+  text-align: left;
+}
+.about-button {
+  display: block;
+  margin: 2rem auto;
+}
+.about-text-field a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 440px) {
+  .about-container {
+    font-size: 90%;
+  }
+}
